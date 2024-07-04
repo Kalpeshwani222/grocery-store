@@ -7,9 +7,7 @@ const CategoryDetailLayout = () => {
     <>
       <div>
         <SubHeader />
-        {/* <div className="px-5 py-2 h-fit md:px-20 md:py-20"> */}
         <Outlet />
-        {/* </div> */}
       </div>
     </>
   );
