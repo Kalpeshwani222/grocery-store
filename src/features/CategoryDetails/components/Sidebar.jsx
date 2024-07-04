@@ -23,12 +23,15 @@ const Sidebar = () => {
         <div className="sticky top-0 overflow-y-auto">
           {data?.map((subcate) => {
             return (
-              <div className=" bg-white p-2 flex flex-wrap md:flex-nowrap justify-center md:justify-normal items-center gap-x-2  focus:bg-indigo-300" onClick={(e) => handleNavigate(e, subcate._id)}>
+              <button
+                className=" bg-white p-2 flex flex-wrap  width-full md:flex-nowrap justify-center md:justify-normal items-center gap-x-2  focus:border-[#950edb] focus:border-l-4 focus:text-[#7c0ab1] focus:bg-[#f0ccff]"
+                onClick={(e) => handleNavigate(e, subcate._id)}
+              >
                 <div className="w-16 h-16 bg-gray-100 shrink-0 rounded-xl">
                   <img src={subcate.image} alt="img" loading="lazy" />{" "}
                 </div>
                 <p className="font-medium">{subcate.title}}</p>
-              </div>
+              </button>
             );
           })}
         </div>
